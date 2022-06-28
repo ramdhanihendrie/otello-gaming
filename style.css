@@ -76,7 +76,7 @@ header {
 #hero h1,
 #addon h1 {
   color: white;
-  font-size: 70px;
+  font-size: 35px;
   text-transform: uppercase;
 }
 
@@ -166,7 +166,8 @@ header {
     width: 50%;
   }
 
-  #hero h1 {
+  #hero h1,
+  #addon h1 {
     font-size: 70px;
   }
   
