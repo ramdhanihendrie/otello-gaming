@@ -75,7 +75,8 @@ header {
 
 #hero h1,
 #addon h1,
-#stream h1 {
+#stream h1,
+#community h1 {
   color: white;
   font-size: 35px;
   text-transform: uppercase;
@@ -183,6 +184,13 @@ header {
   width: 90%;
 }
 
+#community {
+  background-image: url("assets/community-background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0 100px;
+  color: #FFFFFF
+}
 
 
 @media (min-width: 	576px) {
@@ -198,7 +206,8 @@ header {
 
   #hero h1,
   #addon h1,
-  #stream h1 {
+  #stream h1,
+  #community h1 {
     font-size: 60px;
   }
 
