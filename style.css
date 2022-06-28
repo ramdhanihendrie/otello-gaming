@@ -74,7 +74,8 @@ header {
 }
 
 #hero h1,
-#addon h1 {
+#addon h1,
+#stream h1 {
   color: white;
   font-size: 35px;
   text-transform: uppercase;
@@ -161,14 +162,47 @@ header {
   font-weight: 400;
 }
 
+.stream-container {
+  width: 90%;
+  height: 300px;
+  position: relative;
+}
+
+.stream-container h1,
+.stream-container img {
+  position: absolute;
+}
+
+.stream-container h1 {
+  z-index: 2;
+}
+
+.stream-container img {
+  top: 70px;
+  left: 30px;
+  width: 90%;
+}
+
+
+
+@media (min-width: 	576px) {
+  #stream h1 {
+    font-size: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   #hero .container, #addon .container {
     width: 50%;
   }
 
   #hero h1,
-  #addon h1 {
-    font-size: 70px;
+  #addon h1,
+  #stream h1 {
+    font-size: 60px;
   }
-  
+
+  .stream-container {
+    width: 50%;
+  }
 }
