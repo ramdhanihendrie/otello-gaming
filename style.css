@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #101010;
+  background-color: #181818;
 }
 
 header {
@@ -110,12 +110,12 @@ header {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.nav-item {
+.tab-item {
   background: #30384D;
   border-radius: 5px;
 }
 
-.active-tab, .nav-item:hover{
+.active-tab, .tab-item:hover{
   background: #4D3030;
   color: #FFFFFF !important;
 }
@@ -188,8 +188,21 @@ header {
   background-image: url("assets/community-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0 100px;
+  padding: 50vh 0 30vh;
   color: #FFFFFF
+}
+
+footer h5 {
+  opacity: 0.5;
+}
+
+footer .nav-item a {
+  color: #FFFFFF;
+}
+
+.nav-item a:hover {
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 
@@ -206,9 +219,13 @@ header {
 
   #hero h1,
   #addon h1,
-  #stream h1,
   #community h1 {
-    font-size: 60px;
+    font-size: 70px;
+  }
+
+  #stream h1 {
+    font-size: 50px;
+    width: 50%;
   }
 
   .stream-container {
