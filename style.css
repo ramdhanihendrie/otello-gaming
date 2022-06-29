@@ -16,6 +16,9 @@ header {
   position: fixed;
   top: 0;
   background: linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  background: -webkit-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  background: -moz-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  background: -o-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
   width: 100vw;
   z-index: 99;
 }
