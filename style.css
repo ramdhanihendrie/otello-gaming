@@ -217,6 +217,36 @@ footer .nav-item a {
   opacity: 0.5;
 }
 
+#partner,
+#games,
+#price-list,
+#community {
+  position: relative;
+}
+
+#partner object {
+  position: absolute;
+  top: 0px;
+}
+
+#games object {
+  position: absolute;
+  right: 0;
+  top: 500px;
+}
+
+#price-list object {
+  position: absolute;
+  top: 0px;
+}
+
+#community object {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  opacity: 0.5;
+}
+
 
 @media (min-width: 	576px) {
   #stream h1 {
