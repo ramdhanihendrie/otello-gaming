@@ -64,6 +64,9 @@ header {
 
 #hero {
   background: linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url("assets/hero-background-image.png");
+  background: -webkit-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url("assets/hero-background-image.png");
+  background: -moz-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url("assets/hero-background-image.png");
+  background: -o-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url("assets/hero-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0 100px;
@@ -138,6 +141,9 @@ header {
 
 #addon {
   background-image: linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/addon-background-image.png");
+  background-image: -webkit-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/addon-background-image.png");
+  background-image: -moz-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/addon-background-image.png");
+  background-image: -o-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/addon-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0 100px;
@@ -186,6 +192,9 @@ header {
 
 #community {
   background-image: linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/community-background-image.png");
+  background-image: -webkit-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/community-background-image.png");
+  background-image: -moz-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/community-background-image.png");
+  background-image: -o-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/community-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50vh 0 30vh;
