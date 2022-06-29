@@ -224,23 +224,24 @@ footer .nav-item a {
   position: relative;
 }
 
-#partner object {
+#partner > img {
   position: absolute;
+  left: 0px;
   top: 0px;
 }
 
-#games object {
+#games > img {
   position: absolute;
   right: 0;
   top: 500px;
 }
 
-#price-list object {
+#price-list > img {
   position: absolute;
   top: 0px;
 }
 
-#community object {
+#community > img {
   position: absolute;
   right: 0px;
   top: 50px;
