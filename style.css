@@ -228,17 +228,20 @@ footer .nav-item a {
   position: absolute;
   left: 0px;
   top: 0px;
+  max-width: 70%;
 }
 
 #games > img {
   position: absolute;
   right: 0;
   top: 500px;
+  max-width: 70%;
 }
 
 #price-list > img {
   position: absolute;
   top: 0px;
+  max-width: 70%;
 }
 
 #community > img {
@@ -246,6 +249,7 @@ footer .nav-item a {
   right: 0px;
   top: 50px;
   opacity: 0.5;
+  max-width: 70%;
 }
 
 
