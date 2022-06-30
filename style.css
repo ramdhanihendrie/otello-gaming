@@ -200,7 +200,7 @@ header {
   background-image: -o-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 1)), url("assets/community-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50vh 0 30vh;
+  padding: 40vh 0 20vh;
   color: #FFFFFF
 }
 
@@ -252,6 +252,34 @@ footer .nav-item a {
   max-width: 70%;
 }
 
+.modal-content {
+  background: linear-gradient(190deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
+  background: -webkit-linear-gradient(260deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
+  background: -moz-linear-gradient(260deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
+  background: -o-linear-gradient(260deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.login-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fade {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 46, 0.1), rgba(255, 0, 0, 0.2)) no-repeat right;
+  background: -webkit-linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 46, 0.1), rgba(255, 0, 0, 0.2)) no-repeat right;
+  background: -moz-linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 46, 0.1), rgba(255, 0, 0, 0.2)) no-repeat right;
+  background: -o-linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 46, 0.1), rgba(255, 0, 0, 0.2)) no-repeat right;
+  background-size: 30% 100%;
+}
+
+#form-login input[type="Email"], input[type="Password"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: #101010 1px solid;
+  padding: 5px 2px;
+}
 
 @media (min-width: 	576px) {
   #stream h1 {
@@ -263,7 +291,7 @@ footer .nav-item a {
   #hero .container, #addon .container {
     width: 50%;
   }
-
+  
   #hero h1,
   #addon h1,
   #community h1 {
@@ -276,6 +304,10 @@ footer .nav-item a {
   }
 
   .stream-container {
+    width: 50%;
+  }
+
+  .login-wrapper {
     width: 50%;
   }
 }
