@@ -252,7 +252,8 @@ footer .nav-item a {
   max-width: 70%;
 }
 
-.modal-content {
+.login-modal-content,
+.register-modal-content {
   background: linear-gradient(190deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
   background: -webkit-linear-gradient(260deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
   background: -moz-linear-gradient(260deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 0, 214, 0.5)), #FFFFFF;
@@ -274,7 +275,7 @@ footer .nav-item a {
   background-size: 30% 100%;
 }
 
-#form-login input[type="Email"], input[type="Password"] {
+input[name="fullname"], input[name="email"], input[name="password"] {
   background-color: transparent;
   border: none;
   border-bottom: #101010 1px solid;

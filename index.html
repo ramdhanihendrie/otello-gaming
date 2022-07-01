@@ -43,10 +43,39 @@
     </nav>
   </header>
 
-  <!-- Modal -->
+  <!-- Modal Login -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
+      <div class="modal-content login-modal-content">
+        <div class="modal-body position-relative">
+          <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <div class="login-wrapper my-5">
+            <h2>Login Account</h2>
+            <div class="btn-wrapper d-flex gap-2 my-3 my-md-5">
+              <a href="#" class="btn btn-outline-dark col-6 py-3"><img src="./assets/google.png" alt="Google Logo"> Sign
+                in with Google</a>
+              <a href="#" class="btn btn-outline-dark col-6 py-3"><img src="./assets/facebook-circle.png"
+                  alt="Facebook Logo"> Sign in with Facebook</a>
+            </div>
+            <p class="text-center fw-bold">OR</p>
+            <form action="#" id="form-login" class="d-flex flex-column gap-4 px-2 px-lg-5">
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="password" placeholder="Password" name="password" required>
+              <input type="submit" value="Sign in" class="btn btn-red py-2">
+              <p>Don’t have an account?<a href="#" class="text-red" data-bs-toggle="modal"
+                  data-bs-target="#registerModal"> Create account</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Register -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content register-modal-content">
         <div class="modal-body position-relative">
           <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal"
             aria-label="Close"></button>
@@ -61,10 +90,12 @@
             </div>
             <p class="text-center fw-bold">OR</p>
             <form action="#" id="form-login" class="d-flex flex-column gap-4 px-2 px-lg-5">
+              <input type="text" placeholder="Full Name" name="fullname" required>
               <input type="email" placeholder="Email" name="email" required>
               <input type="password" placeholder="Password" name="password" required>
-              <input type="submit" value="Sign in" class="btn btn-red py-2">
-              <p>Don’t have an account?<a href="#" class="text-red"> Create account</a></p>
+              <input type="submit" value="Create Account" class="btn btn-red py-2">
+              <p>Already have an account? <a href="#" class="text-red" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">Log in</a></p>
             </form>
           </div>
         </div>
