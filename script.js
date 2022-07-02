@@ -1,17 +1,15 @@
-// const games = ["Ragnarok", "Red Dead Redemtion 2", "Among Us", "Call of Duty", "Fortnite", "Genshin Impact", "GTA V", "Mobile Legends", "PUBG Mobile"]
+const gameDetail = document.getElementsByClassName('card-detail')
 
-// games.map((game) => {
-//   const container = document.getElementsByClassName("card-container")  
-//   container.write(
-//     `
-//       <div class="card col-md-4">
-//         <img idsrc="" class="card-img-top" alt="games-image">
-//         <div class="card-body d-flex flex-column">
-//           <h5 class="card-title text-white">testasdasd</h5>
-//           <a href="#" class="card-detail fw-bold my-2">See Details</a>
-//           <a href="#" class="btn btn-red">Claim</a>
-//         </div>
-//       </div>
-//     `
-//   )
-// })
+for(let i = 0; i < gameDetail.length; i++){
+  gameDetail[i].addEventListener('click', event => {
+    const game = event.target.dataset.bsGame
+
+    const gameTitle = document.querySelector('#games-title')
+    gameTitle.textContent = `${game}`
+
+    const detailImage = document.querySelector('#detail-image')
+    detailImage.setAttribute('src', `./assets/games/${game}.png`)
+  })
+}
+
+

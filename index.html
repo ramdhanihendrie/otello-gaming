@@ -89,7 +89,7 @@
                   alt="Facebook Logo"> Sign up with Facebook</a>
             </div>
             <p class="text-center fw-bold">OR</p>
-            <form action="#" id="form-login" class="d-flex flex-column gap-4 px-2 px-lg-5">
+            <form action="#" id="form-register" class="d-flex flex-column gap-4 px-2 px-lg-5">
               <input type="text" placeholder="Full Name" name="fullname" required>
               <input type="email" placeholder="Email" name="email" required>
               <input type="password" placeholder="Password" name="password" required>
@@ -97,6 +97,29 @@
               <p>Already have an account? <a href="#" class="text-red" data-bs-toggle="modal"
                   data-bs-target="#loginModal">Log in</a></p>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Detail Card Games -->
+  <div class="modal fade" id="gamesDetailModal" tabindex="-1" aria-labelledby="gamesDetailModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content detail-modal-content bg-black text-white border border-white">
+        <div class="modal-body">
+          <img id="detail-image" alt="Game image" width="100%">
+          <h2 id="games-title" class="text-center my-3"></h2>
+          <div class="border border-white rounded p-3 ">
+            <h5>Detail Benefit :</h5>
+            <li>Voucher UPoint MLBB 11+1 Diamond</li>
+            <li>Skin Balmond Fest</li>
+          </div>
+          <div class="row gap-2 mt-2 p-2">
+            <a class="col btn btn-outline rounded-pill pt-2" href="#" data-bs-dismiss="modal"
+              aria-label="Close">Close</a>
+            <a class="col btn btn-red rounded-pill pt-2" href="#">Claim</a>
           </div>
         </div>
       </div>
@@ -171,7 +194,7 @@
                   <img src="./assets/games/${game}.png" class="card-img-top" alt="games-image">
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-white">${game}</h5>
-                    <a href="#" class="card-detail fw-bold my-2 flex-grow">See Details</a>
+                    <a href="#" class="card-detail fw-bold my-2 flex-grow" data-bs-toggle="modal" data-bs-target="#gamesDetailModal" data-bs-game="${game}">See Details</a>
                     <a href="#" class="btn btn-red mt-auto">Claim</a>
                   </div>
                 </div>
