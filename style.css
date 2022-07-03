@@ -308,13 +308,25 @@ input[name="fullname"], input[name="email"], input[name="password"] {
   cursor: pointer;
 }
 
+#internet-package-page {
+  position: relative;
+  background: url("assets/package-list-bg.png");
+  background-position: 0px 15px;
+}
+
+#internet-package-page img {
+  position: absolute;
+  top: 0px;
+  max-width: 70%;
+}
+
 @media (min-width: 	576px) {
   #stream h1 {
     font-size: 40px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #hero .container, #addon .container {
     width: 50%;
   }
@@ -324,17 +336,23 @@ input[name="fullname"], input[name="email"], input[name="password"] {
   #community h1 {
     font-size: 70px;
   }
-
+  
   #stream h1 {
     font-size: 50px;
     width: 50%;
   }
-
+  
   .stream-container {
     width: 50%;
   }
-
+  
   .login-wrapper {
     width: 50%;
+  }
+  
+  #internet-package-page {
+    background-size: contain;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
   }
 }
