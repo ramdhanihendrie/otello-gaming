@@ -304,6 +304,10 @@ input[name="fullname"], input[name="email"], input[name="password"] {
 	background-color: #909090;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @media (min-width: 	576px) {
   #stream h1 {
     font-size: 40px;
