@@ -389,4 +389,19 @@ a.page-link:hover {
   #search-group {
     width: 50%;
   }
+
+  #right-events {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #events-content {
+    position: relative;
+    width: 100%;
+  }
 }
