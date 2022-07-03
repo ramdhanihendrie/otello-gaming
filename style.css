@@ -121,9 +121,13 @@ header {
   border-radius: 5px;
 }
 
-.active-tab, .tab-item:hover{
+.active-tab, 
+.tab-item:hover{
   background: #4D3030;
-  color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+  color: #FFFFFF;
 }
 
 .card {
@@ -320,9 +324,35 @@ input[name="fullname"], input[name="email"], input[name="password"] {
   max-width: 70%;
 }
 
+#search-group {
+  width: 90%;
+}
+
+.form-control:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.page-link {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.active>.page-link {
+  background-color: #FE0101;
+  border: #FE0101 1px solid;
+}
+
+a.page-link:hover {
+  color: #101010 !important;
+}
+
 @media (min-width: 	576px) {
   #stream h1 {
     font-size: 40px;
+  }
+  #search-group {
+    width: 70%;
   }
 }
 
@@ -354,5 +384,9 @@ input[name="fullname"], input[name="email"], input[name="password"] {
     background-size: contain;
     background-position: 50% 100%;
     background-repeat: no-repeat;
+  }
+
+  #search-group {
+    width: 50%;
   }
 }

@@ -1,5 +1,5 @@
-// Script specific for index page
-function indexScript() {
+// Script specific for index and games page
+function indexAndGamesScript() {
   const gameDetail = document.getElementsByClassName('card-detail')
 
   for(let i = 0; i < gameDetail.length; i++){
