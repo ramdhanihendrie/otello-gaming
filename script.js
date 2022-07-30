@@ -134,7 +134,20 @@ function showGameDetail() {
       detailImage.setAttribute('src', `./assets/games/${gameName}.png`)
   
       
-      const gameBenefit = document.getElementById('gameBenefit')
+      const gameBenefits = document.getElementById('gameBenefits')
+      let benefitList = []
+
+      gameList.map((game) => {
+        if(game.title === gameName) {
+          benefitList = game.benefits
+        }
+      })
+      
+      const benefitInHTML = benefitList.map((benefit) => {
+        return `<li>${benefit}</li>`
+      }).join(' ')
+      
+      gameBenefits.innerHTML = benefitInHTML;
     })
   }
 }
