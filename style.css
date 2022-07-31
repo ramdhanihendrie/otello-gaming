@@ -47,6 +47,27 @@ header {
   line-height: 100%;
 }
 
+.navbar .dropdown-menu {
+  background: linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  background: -webkit-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  background: -moz-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  background: -o-linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0));
+  border: none;
+}
+
+.navbar .dropdown-item {
+  color: #FFFFFF;
+}
+
+.navbar .dropdown-item:hover {
+  color: #101010;
+}
+
+.navbar .dropdown-item:active {
+  background-color: #FFFFFF;
+  color: #101010;
+}
+
 .active {
   color: #FFFFFF !important;
 }
