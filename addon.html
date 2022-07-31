@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Add On - Otello Gaming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-3" href="#">
+          <object data="assets/otello-logo.svg" alt="logo" width="50" height="50"
+            class="d-inline-block align-text-top"></object>
+          OtelloGaming
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./">Home</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Product Service
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./games.html">Games</a></li>
+                <li><a class="dropdown-item" href="./addon.html">Add On</a></li>
+                <li><a class="dropdown-item" href="./internet-package.html">Internet Package</a></li>
+              </ul>
+            </li>
+            <a class="nav-link" href="./events.html">Events</a>
+            <a class="nav-link" href="./about.html">About Us</a>
+            <!-- Button trigger modal Log in Mobile -->
+            <button type="button" class="btn btn-red d-block d-lg-none" data-bs-toggle="modal"
+              data-bs-target="#loginModal">
+              Log in
+            </button>
+          </div>
+        </div>
+        <div class="btn-header-container d-none d-lg-block">
+          <!-- Button trigger modal Log in Desktop -->
+          <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Log in
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content login-modal-content">
+        <div class="modal-body position-relative">
+          <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <div class="login-wrapper my-5">
+            <h2>Login Account</h2>
+            <div class="btn-wrapper d-flex gap-2 my-3 my-md-5">
+              <a href="#" class="btn btn-outline-dark col-6 py-3"><img src="./assets/google.png" alt="Google Logo"> Sign
+                in with Google</a>
+              <a href="#" class="btn btn-outline-dark col-6 py-3"><img src="./assets/facebook-circle.png"
+                  alt="Facebook Logo"> Sign in with Facebook</a>
+            </div>
+            <p class="text-center fw-bold">OR</p>
+            <form action="#" id="form-login" class="d-flex flex-column gap-4 px-2 px-lg-5">
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="password" placeholder="Password" name="password" autocomplete="off" required>
+              <input type="submit" value="Sign in" class="btn btn-red py-2">
+              <p>Don’t have an account?<a href="#" class="text-red" data-bs-toggle="modal"
+                  data-bs-target="#registerModal"> Create account</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Register -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content register-modal-content">
+        <div class="modal-body position-relative">
+          <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <div class="login-wrapper my-5">
+            <h2>Create Account</h2>
+            <div class="btn-wrapper d-flex gap-2 my-3 my-md-5">
+              <a href="#" class="btn btn-outline-dark col-6 py-3"><img src="./assets/google.png" alt="Google Logo"> Sign
+                up
+                with Google</a>
+              <a href="#" class="btn btn-outline-dark col-6 py-3"><img src="./assets/facebook-circle.png"
+                  alt="Facebook Logo"> Sign up with Facebook</a>
+            </div>
+            <p class="text-center fw-bold">OR</p>
+            <form action="#" id="form-register" class="d-flex flex-column gap-4 px-2 px-lg-5">
+              <input type="text" placeholder="Full Name" name="fullname" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="password" placeholder="Password" name="password" autocomplete="off" required>
+              <input type="submit" value="Create Account" class="btn btn-red py-2">
+              <p>Already have an account? <a href="#" class="text-red" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">Log in</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="addon">
+    <div class="mb-4 text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Get Interesting Addons</h1>
+        <p class="col-md-8 mx-auto fs-5">Special for you Otello Gaming users who want to get attractive rewards for your
+          favorite games!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container mx-auto row py-5 my-5 gap-1 gap-md-5 text-white">
+      <div class="col-12 col-md-4 mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-light text-decoration-none">
+          <h2>Otello Gaming</h2>
+        </a>
+        <p>Our online digital gaming entertainment solutions support a unique and unparalleled
+          competition experience to achieve your business goals.</p>
+        <div class="social-icon">
+          <a href="#"><img src="./assets/instagram.png" alt="instagram icon"></a>
+          <a href="#"><img src="./assets/youtube.png" alt="youtube icon"></a>
+          <a href="#"><img src="./assets/facebook.png" alt="facebook icon"></a>
+        </div>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Pages</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Home</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Features</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Partner</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Company</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">About Us</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Pricing</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Booking</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Support</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">FAQs</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">Otellogaming.com</li>
+          <li class="nav-item mb-3">A. Global Gateway 8, Rute Del la Perle, Mahe, Seychelles</li>
+          <li class="nav-item mb-3">(+62) 81211307017</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
